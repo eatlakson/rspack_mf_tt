@@ -1,0 +1,17 @@
+{
+  "name": "federation-example",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "wsrun --parallel -p @mftest/host -p @mftest/remote -c start",
+    "build": "yarn workspaces run build",
+    "build-dev": "yarn workspaces run build-dev"
+  },
+  "devDependencies": {
+    "esbuild-loader": "^4.0.2",
+    "prettier": "3.0.3",
+    "wsrun": "^5.2.0"
+  }
+}
